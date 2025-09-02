@@ -12,7 +12,7 @@
 - Update all the packages and then clone the code.
 - Clone your application's code repository onto the EC2 instance:
   ```bash
-  git clone https://github.com/kuldeepranjan23/DevSecOps-Project.git
+  git clone https://github.com/GooferByte/DevSecOps.git
   ```
 
 **Step 3: Install Docker and Run the App Using a Container:**
@@ -168,7 +168,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/kuldeepranjan23/DevSecOps-Project.git'
+                git branch: 'main', url: 'https://github.com/GooferByte/DevSecOps.git'
             }
         }
         stage("Sonarqube Analysis") {
@@ -258,7 +258,7 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'main', url: 'https://github.com/kuldeepranjan23/DevSecOps-Project.git'
+                git branch: 'main', url: 'https://github.com/GooferByte/DevSecOps.git'
             }
         }
         stage("Sonarqube Analysis "){
